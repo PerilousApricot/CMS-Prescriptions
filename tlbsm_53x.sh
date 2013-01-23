@@ -24,5 +24,5 @@ cvs co -r V01-04-10 RecoTauTag/Configuration
 cvs co -r V00-04-00 CondFormats/EgammaObjects
 #cvs up -r 1.31.6.4 PhysicsTools/PatAlgos/python/producersLayer1/tauProducer_cfi.py
 #cvs up -r 1.52.10.4 PhysicsTools/PatAlgos/python/tools/tauTools.py
-
+scram b ProjectRename
 scram b -j 9
