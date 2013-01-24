@@ -188,6 +188,8 @@ process.load('RecoMET.METFilters.trackingFailureFilter_cfi')
 
 ## Tau stuff $$ ______________________________________________________________||
 process.load("RecoTauTag.Configuration.RecoPFTauTag_cff")
+from PhysicsTools.PatAlgos.tools.tauTools import switchToPFTauHPS
+switchToPFTauHPS(process)
 
 # switch on PAT trigger
 #from PhysicsTools.PatAlgos.tools.trigTools import switchOnTrigger
