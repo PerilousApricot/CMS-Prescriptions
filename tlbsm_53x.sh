@@ -1,4 +1,3 @@
-cmsset
 
 # note, this pulls some newer versions of packages than used to exist in the previous
 # recipe. I checked https://cmstags.cern.ch/tc/#Releases and removed addpkg statements
