@@ -9,9 +9,6 @@ cmsenv
 addpkg DataFormats/PatCandidates V06-05-06-05
 addpkg DataFormats/StdDictionaries V00-02-14
 addpkg PhysicsTools/PatAlgos V08-09-51
-# grumble...
-perl -p -i -e 's!if mod.startswith\("kt6"\):!if mod.startswith("kt6") and mod.endswith("Jets"+postfix):!' src/PhysicsTools/PatAlgos/python/tools/pfTools.py
-
 addpkg FWCore/GuiBrowsers V00-00-70
 
 
@@ -37,5 +34,9 @@ cvs co -r V01-04-23 RecoTauTag/RecoTau #HCP + new discriminants
 cvs co -r V01-04-10 RecoTauTag/Configuration
 # unneeded (same version is in this CMSSW version, but it's still in the PAT recommendation?
 #cvs co -r V00-04-00 CondFormats/EgammaObjects
+
+# grumble...
+perl -p -i -e 's!if mod.startswith\("kt6"\):!if mod.startswith("kt6") and mod.endswith("Jets"+postfix):!' PhysicsTools/PatAlgos/python/tools/pfTools.py
+
 
 scram b -j 9
