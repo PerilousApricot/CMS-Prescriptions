@@ -37,6 +37,6 @@ cvs co -r V01-04-10 RecoTauTag/Configuration
 
 # grumble...
 perl -p -i -e 's!if mod.startswith\("kt6"\):!if mod.startswith("kt6") and mod.endswith("Jets"+postfix):!' PhysicsTools/PatAlgos/python/tools/pfTools.py
-
+cp ../../ttbsm_cfg.py TopQuarkAnalysis/TopPairBSM/test
 
 scram b -j 9
