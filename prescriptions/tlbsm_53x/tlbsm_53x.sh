@@ -1,6 +1,6 @@
 
 cmsrel CMSSW_5_3_8_patch1
-cd CMSSW_5_3_8_patch1
+cd CMSSW_5_3_8_patch1/src
 cmsenv
 
 # per 
